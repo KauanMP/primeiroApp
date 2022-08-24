@@ -3,60 +3,80 @@
     <ion-title>
       Cardapio
     </ion-title>
-    <ion-button slot="end">
-      <ion-icon slot="icon-only" name="person-circle"></ion-icon>
-    </ion-button>
+    <ion-buttons slot="end">
+      <ion-icon slot="icon-only" name="person-outline"></ion-icon>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-searchbar value="Buscar"></ion-searchbar>
 
-  <ion-item>
-    <ion-thumbnail slot="start">
-      <img src="#">
-    </ion-thumbnail>
-    <ion-label>Bebidas</ion-label>
-  </ion-item>
-  <ion-list>
-    <ion-item>
-      <ion-thumbnail slot="start">
-    <img src="#">
-  </ion-thumbnail>
-      <ion-badge slot="end">30,50</ion-badge>
-      <ion-label>###</ion-label>
-    </ion-item>
+  <ion-grid>
+    <ion-row>
 
-    <ion-item>
-      <ion-thumbnail slot="start">
-        <img src="#">
-      </ion-thumbnail>
-      <ion-badge slot="end">28,99</ion-badge>
-      <ion-label>###</ion-label>
-    </ion-item>
+      <ion-col size="6" >
+        <ion-card>
+            <img src="https://trimais.vteximg.com.br/arquivos/ids/1036624-410-410/foto_original.jpg?v=637934154636030000" alt="">
+            <ion-item>
+              <ion-label>Coca Cola</ion-label>
+            </ion-item>
+          <ion-item >
+            <ion-label>5,99</ion-label>
+            <ion-button>
+              <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
+            </ion-button>
+          </ion-item>
+        </ion-card>
+      </ion-col><!--fim-->
 
-    <ion-item>
-      <ion-thumbnail slot="start">
-    <img src="#">
-  </ion-thumbnail>
-      <ion-badge slot="end">31,80</ion-badge>
-      <ion-label>###</ion-label>
-    </ion-item>
+      <ion-col size="6">
+        <ion-card>
+          <img src="https://lanchonete.vallesites.com.br/uploads/thumbs/515x515/fanta-laranja-lata.png" alt="">
+          <ion-item>
+            <ion-label>Fanta Laranja</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>5,99</ion-label>
+            <ion-button>
+              <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
+            </ion-button>
+          </ion-item>
+        </ion-card>
+      </ion-col><!--fim-->
 
-    <ion-item>
-      <ion-thumbnail slot="start">
-        <img src="#">
-      </ion-thumbnail>
-      <ion-badge slot="end">32,20</ion-badge>
-      <ion-label>###</ion-label>
-    </ion-item>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card>
+            <img src="https://cdn.irmaospatrocinio.com.br/img/p/1/6/8/6/7/3/168673-large_default.jpg">
+            <ion-item>
+              <ion-label>chweppes</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>7,20</ion-label>
+              <ion-button>
+                <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
+              </ion-button>
+            </ion-item>
+          </ion-card>
+        </ion-col><!--fim-->
 
-    <ion-item>
-      <ion-thumbnail slot="start">
-        <img src="#">
-      </ion-thumbnail>
-      <ion-badge slot="end">29,90</ion-badge>
-      <ion-label>###</ion-label>
-    </ion-item>
-  </ion-list>
+        <ion-col size="6">
+          <ion-card>
+            <img src="https://giassi.vtexassets.com/arquivos/ids/237540/Refrigerante-Cola-Pepsi-Lata-350ml.png?v=637874812061070000">
+            <ion-item>
+              <ion-label>Guarana Antartica</ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>9,00</ion-label>
+              <ion-button>
+                <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
+              </ion-button>
+            </ion-item>
+          </ion-card>
+        </ion-col>
+      </ion-row><!--fim-->
+
+    </ion-row>
+  </ion-grid>
 </ion-content>
