@@ -3,6 +3,15 @@
 
 /** Ionic CSS Variables **/
 :root {
+  /** Madeira **/
+
+	--ion-color-madeira: #D3B099;
+	--ion-color-madeira-rgb: 211,176,153;
+	--ion-color-madeira-contrast: #000000;
+	--ion-color-madeira-contrast-rgb: 0,0,0;
+	--ion-color-madeira-shade: #ba9b87;
+	--ion-color-madeira-tint: #d7b8a3;
+
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -83,6 +92,14 @@
    */
 
   body {
+      
+    --ion-color-madeira: #8a7466;
+    --ion-color-madeira-rgb: 138,116,102;
+    --ion-color-madeira-contrast: #ffffff;
+    --ion-color-madeira-contrast-rgb: 255,255,255;
+    --ion-color-madeira-shade: #79665a;
+    --ion-color-madeira-tint: #968275;
+
     --ion-color-primary: #428cff;
     --ion-color-primary-rgb: 66,140,255;
     --ion-color-primary-contrast: #ffffff;
@@ -233,4 +250,13 @@
 
     --ion-card-background: #1e1e1e;
   }
+}
+
+.ion-color-madeira {
+	--ion-color-base: var(--ion-color-madeira);
+	--ion-color-base-rgb: var(--ion-color-madeira-rgb);
+	--ion-color-contrast: var(--ion-color-madeira-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-madeira-contrast-rgb);
+	--ion-color-shade: var(--ion-color-madeira-shade);
+	--ion-color-tint: var(--ion-color-madeira-tint);
 }
